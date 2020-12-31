@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Discord Nitro Generator</title>
+<link rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/attachments/727413575294910484/763008222649909298/logo.png">
+<link rel="stylesheet" href="style.css">
+<meta content="width=device-width, initial-scale=1' name='viewport"/>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Discord Nitro Generator" />
+<meta property="og:description" content="#DiscordNitroGen A Nitro Generator for Everyone! Built and maintained by 0_0 and tokyo." />
+<meta property="og:url" content="https://discord.gg/2JFPAZeCWb"/>
+<meta charset="utf-8">
+</head>
+<div>
+<h1 style="font-family: helvetica; color: #CC0000">DISCORD NITRO GENERATOR</h1>
+<textarea id="a" rows="11" cols="100" readonly style="resize: none;">
+Thanks for using [NitroGen] by 0_0 and tokyo!
+  
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+[!] Discord Codes will be here.
+[!] MOST OF THE CODES WON'T WORK!
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+</textarea>
+<p></p>
+<p style="font-family: helvetica; color: #CC0000">How many codes do you want to generate per second? (Default 5)</p>
+<input type="text" id="speed" value="5">
+<p></p>
+<button id="generate" class="button">
+  Generate
+</button>
+
+<button id="stop" class="button">
+  Stop
+</button>
+
+<button onclick="stop(); document.getElementById('a').value = '\nThank You for Using This Gen\n―――――――――――――――――――――――――――――――――――――――\n[!] Discord Codes will be here.\n[!] MOST OF THE CODES DO NOT WORK!!\n―――――――――――――――――――――――――――――――――――――――\n\n\n'; document.getElementById('b').value = '';" class="button" id="clear">Clear</button>
+    
+<button id="save" onclick="var rows = document.getElementById('b').value.split('\n').length -  1; download(rows + ' Unchecked Nitro Codes.txt', 'By discord.gg/2JFPAZeCWb\n\n' + document.getElementById('b').value + '\nDumped by [NitroGen - 0_0 and tokyo.]')" class="button">Save Codes</button>
+    <p></p>
+ 
+ <a href="https://discord.gg/2JFPAZeCWb"target="_blank" style="font-family:helvetica; color: #CC0000">Join Our Discord Server!</a>
+<textarea style="display: none;" id="b" rows="11" cols="100" readonly=""></textarea>
+	<script src="main.js"></script>
+</div>
+	<p></p>
+
+  </body>
+</html>
